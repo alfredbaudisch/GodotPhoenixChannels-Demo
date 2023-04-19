@@ -1,13 +1,14 @@
-tool
+@tool
 extends EditorPlugin
 
-func get_name():
-	return "Phoenix Channel"
+func _get_plugin_name() -> String:
+	return "Phoenix Channels"
 
-func _enter_tree():
+func _enter_tree() -> void:
 	# Initialization of the plugin goes here.
 	pass
 
-func _exit_tree():
+
+func _exit_tree() -> void:
 	# Clean-up of the plugin goes here.
 	pass

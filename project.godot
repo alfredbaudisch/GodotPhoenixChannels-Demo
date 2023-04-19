@@ -6,47 +6,18 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
-
-_global_script_classes=[ {
-"base": "Node",
-"class": "PhoenixChannel",
-"language": "GDScript",
-"path": "res://addons/phoenix_channels/scripts/phoenix_channel.gd"
-}, {
-"base": "Node",
-"class": "PhoenixMessage",
-"language": "GDScript",
-"path": "res://addons/phoenix_channels/scripts/phoenix_message.gd"
-}, {
-"base": "Node",
-"class": "PhoenixPresence",
-"language": "GDScript",
-"path": "res://addons/phoenix_channels/scripts/phoenix_presence.gd"
-}, {
-"base": "Node",
-"class": "PhoenixSocket",
-"language": "GDScript",
-"path": "res://addons/phoenix_channels/scripts/phoenix_socket.gd"
-}, {
-"base": "Node",
-"class": "PhoenixUtils",
-"language": "GDScript",
-"path": "res://addons/phoenix_channels/scripts/phoenix_utils.gd"
-} ]
-_global_script_class_icons={
-"PhoenixChannel": "",
-"PhoenixMessage": "",
-"PhoenixPresence": "",
-"PhoenixSocket": "",
-"PhoenixUtils": ""
-}
+config_version=5
 
 [application]
 
-config/name="Phoenix Channels"
+config/name="Phoenix Channels Demo"
 run/main_scene="res://Demo/Demo.tscn"
+config/features=PackedStringArray("4.0")
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PackedStringArray()
 
 [rendering]
 
