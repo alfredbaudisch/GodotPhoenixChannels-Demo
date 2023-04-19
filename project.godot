@@ -1,0 +1,53 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "PhoenixChannel",
+"language": "GDScript",
+"path": "res://addons/phoenix_channels/scripts/phoenix_channel.gd"
+}, {
+"base": "Node",
+"class": "PhoenixMessage",
+"language": "GDScript",
+"path": "res://addons/phoenix_channels/scripts/phoenix_message.gd"
+}, {
+"base": "Node",
+"class": "PhoenixPresence",
+"language": "GDScript",
+"path": "res://addons/phoenix_channels/scripts/phoenix_presence.gd"
+}, {
+"base": "Node",
+"class": "PhoenixSocket",
+"language": "GDScript",
+"path": "res://addons/phoenix_channels/scripts/phoenix_socket.gd"
+}, {
+"base": "Node",
+"class": "PhoenixUtils",
+"language": "GDScript",
+"path": "res://addons/phoenix_channels/scripts/phoenix_utils.gd"
+} ]
+_global_script_class_icons={
+"PhoenixChannel": "",
+"PhoenixMessage": "",
+"PhoenixPresence": "",
+"PhoenixSocket": "",
+"PhoenixUtils": ""
+}
+
+[application]
+
+config/name="Phoenix Channels"
+run/main_scene="res://Demo/Demo.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
